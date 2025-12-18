@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur - KU SAKANA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../Plateforme de jeu/Css/Style (2).css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <h1>KU <span>SAKANA</span></h1>
+            </div>
+            <nav class="nav-links">
+                <a href="Index (1).html"><i class="fas fa-user"></i> Profil</a>
+                <a href="New2.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="New3.html"><i class="fas fa-trophy"></i> Trophées</a>
+                <a href="New3.html"><i class="fas fa-cog"></i> Paramètres</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <aside class="profile-panel">
+                <div class="profile-header">
+                    <div class="avatar-container">
+                        <img src="https://img.freepik.com/vecteurs-premium/illustration-vectorielle-plate-echelle-gris-avatar-profil-utilisateur-icone-personne-image-profil-silhouette-neutre-genre-convient-pour-profils-medias-sociaux-icones-economiseurs-ecran-comme-modelex9xa_719432-2210.jpg?semt=ais_hybrid&w=740&q=80" alt="Avatar" class="avatar">
+                        <div class="online-status"></div>
+                    </div>
+                    <h2>VicTora</h2>
+                    <p class="username">@vicGamer92</p>
+                    <div class="rank">Niveau 42 - Maître du jeu</div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">1,247</div>
+                        <div class="stat-label">Heures de jeu</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">78</div>
+                        <div class="stat-label">Jeux terminés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">42</div>
+                        <div class="stat-label">Trophées</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">156</div>
+                        <div class="stat-label">Amis</div>
+                    </div>
+                </div>
+                
+                <div class="actions">
+                    <button class="btn btn-primary" id="editProfileBtn">
+                        <i class="fas fa-edit"></i> Modifier le profil
+                    </button>
+                    <button class="btn btn-secondary" id="achievementsBtn">
+                        <i class="fas fa-trophy"></i> Voir tous les trophées
+                    </button>
+                    <button class="btn btn-secondary" id="settingsBtn">
+                        <i class="fas fa-cog"></i> Paramètres du compte
+                    </button>
+                </div>
+            </aside>
+
+            <div class="profile-content">
+                <section class="profile-section">
+                    <h3 class="section-title">
+                        <i class="fas fa-history"></i> Jeux récemment joués
+                    </h3>
+                    <div class="games-grid">
+                        <div class="game-card">
+                            <img src="../Plateforme de jeu/Image/Rise of cultures.jpg" alt="Rise of Cultures" class="game-img">
+                            <div class="game-info">
+                                <div class="game-title">Rise of Cultures</div>
+                                <div class="game-category">Stratégie • Aventure</div>
+                                <div class="game-stats">
+                                    <span>48h de jeu</span>
+                                    <span>Niv. 28</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <img src="../Plateforme de jeu/Image/Asphalt.jpg" alt="Asphalt Extreme" class="game-img">
+                            <div class="game-info">
+                                <div class="game-title">Asphalt Extreme</div>
+                                <div class="game-category">Course • Action</div>
+                                <div class="game-stats">
+                                    <span>36h de jeu</span>
+                                    <span>Niv. 19</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <img src="../Plateforme de jeu/Image/fantasy.jpg" alt="Fantasy Quest" class="game-img">
+                            <div class="game-info">
+                                <div class="game-title">Fantasy Quest</div>
+                                <div class="game-category">RPG • Fantastique</div>
+                                <div class="game-stats">
+                                    <span>120h de jeu</span>
+                                    <span>Niv. 45</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <img src="../Plateforme de jeu/Image/space.webp" alt="Space Battles" class="game-img">
+                            <div class="game-info">
+                                <div class="game-title">Space Battles</div>
+                                <div class="game-category">Combat • Sci-Fi</div>
+                                <div class="game-stats">
+                                    <span>64h de jeu</span>
+                                    <span>Niv. 32</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="profile-section">
+                    <h3 class="section-title">
+                        <i class="fas fa-trophy"></i> Trophées récents
+                    </h3>
+                    <div class="trophies-container">
+                        <div class="trophy">
+                            <div class="trophy-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="trophy-info">
+                                <h4>Maître de la stratégie</h4>
+                                <p>Terminez 50 missions en mode difficile</p>
+                            </div>
+                        </div>
+                        <div class="trophy">
+                            <div class="trophy-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="trophy-info">
+                                <h4>Véloce</h4>
+                                <p>Terminez une course en moins de 2 minutes</p>
+                            </div>
+                        </div>
+                        <div class="trophy">
+                            <div class="trophy-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="trophy-info">
+                                <h4>Leader né</h4>
+                                <p>Créez une guilde de 50 membres</p>
+                            </div>
+                        </div>
+                        <div class="trophy">
+                            <div class="trophy-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="trophy-info">
+                                <h4>Perfectionniste</h4>
+                                <p>Obtenez 3 étoiles à tous les niveaux</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="friends-activity-container">
+                    <section class="profile-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-user-friends"></i> Amis en ligne (3)
+                        </h3>
+                        <div class="friends-list">
+                            <div class="friend-item">
+                                <div class="friend-info">
+                                    <img src="../Plateforme de jeu/Image/batchi.jpg" alt="JérémiVibes" class="friend-avatar">
+                                    <div class="friend-details">
+                                        <div class="friend-name">Batchi-Bath</div>
+                                        <div class="friend-status online">En ligne</div>
+                                    </div>
+                                </div>
+                                <div class="friend-game">Rise of Cultures</div>
+                            </div>
+                            <div class="friend-item">
+                                <div class="friend-info">
+                                    <img src="../Plateforme de jeu/Image/dt.jpg" alt="Divine Taty" class="friend-avatar">
+                                    <div class="friend-details">
+                                        <div class="friend-name">Divine Taty</div>
+                                        <div class="friend-status online">En ligne</div>
+                                    </div>
+                                </div>
+                                <div class="friend-game">Asphalt Extreme</div>
+                            </div>
+                            <div class="friend-item">
+                                <div class="friend-info">
+                                    <img src="../Plateforme de jeu/Image/boris.jpg" alt="BorisFury" class="friend-avatar">
+                                    <div class="friend-details">
+                                        <div class="friend-name">Boris Loko</div>
+                                        <div class="friend-status offline">Hors ligne</div>
+                                    </div>
+                                </div>
+                                <div class="friend-game">Dernière connexion: 2h</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="profile-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-stream"></i> Activité récente
+                        </h3>
+                        <div class="activity-timeline">
+                            <div class="activity-item">
+                                <div class="activity-time">Il y a 15 minutes</div>
+                                <div class="activity-text">A terminé le niveau 45 de "Fantasy Quest"</div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time">Il y a 2 heures</div>
+                                <div class="activity-text">A gagné le trophée "Véloce" dans "Asphalt Extreme"</div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time">Il y a 5 heures</div>
+                                <div class="activity-text">A ajouté "EstherX" en ami</div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time">Il y a 1 jour</div>
+                                <div class="activity-text">A atteint le niveau 42 sur KU SAKANA</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 KU SAKANA - Plateforme de jeu en ligne. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fas fa-lock"></i> Confidentialité</a>
+                <a href="#"><i class="fas fa-file-contract"></i> Conditions</a>
+                <a href="#"><i class="fas fa-headset"></i> Support</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <p>Contact: 06 62 73 59 1 | Email: support@kusakana.com</p>
+        </footer>
+    </div>
+
+    <script src="../Plateforme de jeu/Script.js"></script>
+</body>
+</html>

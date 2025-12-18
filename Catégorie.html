@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Plateforme de jeu/Css/Catégorie.css">
+    <script src="../Plateforme de jeu/Java/Catégorie.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div>
+        <input type="text" id="search" placeholder="Rechercher un jeu...">
+    </section>
+    </div>
+
+    <main class="categories-main container">
+        <section class="category-section fade-in" id="jeux-gratuits">
+            <div class="category-header">
+                <div class="category-title">
+                    <div class="category-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="category-text">
+                        <h2>Jeux Gratuits</h2>
+                        <div class="category-count">25 jeux disponibles - Jouez sans limite !</div>
+                    </div>
+                </div>
+                <a href="New2.html" class="see-more-link">
+                    Retour à l'accueil <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+    <div id="categories" class="categories-container">
+        <div class="cat-card" onclick="showDomain('action')">
+            <img class="cat-img" src="../Plateforme de jeu/Image/action.jpg" alt="Jeux d'actions">
+            <div class="cat-title">Jeux d'actions</div>
+            <button class="see-btn">Voir les jeux</button>
+        </div>
+        
+        <div class="cat-card" onclick="showDomain('aventure')">
+            <img class="cat-img" src="../Plateforme de jeu/Image/aventure.jpg" alt="Jeux d'aventure">
+            <div class="cat-title">Jeux d'aventures</div>
+            <button class="see-btn">Voir les jeux</button>
+        </div>
+        
+        <div class="cat-card" onclick="showDomain('multi')">
+            <img class="cat-img" src="../Plateforme de jeu/Image/multi.jpg" alt="Jeu multiplayer">
+            <div class="cat-title">Jeu multiplayer</div>
+            <button class="see-btn">Voir les jeux</button>
+        </div>
+        
+        <div class="cat-card" onclick="showDomain('sport')">
+            <img class="cat-img" src="../Plateforme de jeu/Image/sport.jpg" alt="Jeux sportif">
+            <div class="cat-title">Jeux sportif</div>
+            <button class="see-btn">Voir les jeux</button>
+        </div>
+        
+        <div class="cat-card" onclick="showDomain('course')">
+            <img class="cat-img" src="../Plateforme de jeu/Image/course.jpg" alt="Jeux de course">
+            <div class="cat-title">Jeux de course</div>
+            <button class="see-btn">Voir les jeux</button>
+        </div>
+    </div>
+    <div id="page-action" class="games-page"></div>
+    <div id="page-aventure" class="games-page"></div>
+    <div id="page-multi" class="games-page"></div>
+    <div id="page-sport" class="games-page"></div>
+    <div id="page-course" class="games-page"></div>
+    <div id="simulationModal">
+        <div class="modal-content">
+            <h2>Simulation de jeu</h2>
+            <p id="simulationText">Jeu en simulation...<br>Veuillez patienter ou essayez le vrai jeu !</p>
+            <button class="play-btn close-btn" onclick="fermerSimulation()">Fermer</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-sections">
+            <div class="section">
+                <h4>A propos</h4>
+                <ul>
+                    <li><a href="contact.html">Contact: 066273591</a></li>
+                    <li><a href="logo.html">Logo de KU SAKANA</a></li>
+                    <li><a href="conditions.html">Conditions d'utilisation</a></li>
+                    <li><a href="signalement.html">Signaler contenu illicite</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Aides</h4>
+                <ul>
+                    <li><a href="aide.html">Centre d'aide KU SAKANA</a></li>
+                    <li><a href="faq.html">Questions fréquentes</a></li>
+                    <li><a href="outils.html">Boite à outils</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Compétences</h4>
+                <ul>
+                    <li><a href="html.html">Langage HTML</a></li>
+                    <li><a href="css.html">Langage CSS</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="python.html">Python</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Divers</h4>
+                <ul>
+                    <li><a href="vendre.html">Comment vendre son jeu ?</a></li>
+                    <li><a href="jouer.html">Comment jouer en ligne ?</a></li>
+                    <li><a href="telecharger.html">Comment télécharger un jeu ?</a></li>
+                    <li><a href="debutants.html">Plateforme adaptée aux débutants</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-botton">
+            <p>© 2025 Le site KUSAKANA disponible sur toutes les plateformes. Tous droits réservés.</p>
+            <ul>
+                <li><a href="mentions-legales.html">Mentions légales</a></li>
+                <li><a href="contact.html">Contact: 066273591</a></li>
+                <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+            </ul>
+            <div class="Social-icons">
+                <a href="https://facebook.com/GraceIvinza"><i class="fab fa-facebook"></i></a>
+                <a href="https://youtube.com/@Divinemini"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/divine.taty"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:divinetaty15@gmail.com"><i class="fab fa-google"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

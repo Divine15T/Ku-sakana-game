@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter - KU SAKANA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../Plateforme de jeu/Css/New.css">
+    <script src="../Plateforme de jeu/Java/New.js"></script>
+</head>
+<body>
+    <div class="background-wrapper">
+        <div class="background-image"></div>
+        <div class="background-gradient"></div>
+    </div>
+    <header class="kusakana-header">
+        <a href="#" class="kusakana-logo">
+            <i class="fas fa-gamepad"></i>
+            <span>KU SAKANA</span>
+        </a>
+        <select class="language-selector">
+            <option value="fr">🇫🇷 Français</option>
+            <option value="en">🇺🇸 English</option>
+            <option value="es">🇪🇸 Español</option>
+        </select>
+    </header>
+
+    <div class="login-container">
+        <div class="login-box fade-in">
+            <h1 class="login-title">Identifiez-vous</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" class="form-input" id="email" placeholder=" " required>
+                    <label for="email" class="form-label">E-mail ou numéro de téléphone</label>
+                    <div class="error-message" id="emailError">
+                        Veuillez saisir une adresse e-mail ou un numéro de téléphone valide.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" 
+                           class="form-input" 
+                           id="password" 
+                           placeholder=" " 
+                           required>
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <div class="error-message" id="passwordError">
+                        Votre mot de passe doit contenir entre 4 et 60 caractères.
+                    </div>
+                </div>
+
+                <button type="submit" class="login-button" id="loginButton" onclick="redirectTopage(event)">
+                    <span id="buttonText">M'identifier</span>
+                    <div class="spinner" id="spinner"></div>
+                </button>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" class="checkbox" id="rememberMe">
+                        Se souvenir de moi
+                    </label>
+                    <a href="#" class="help-link">Besoin d'aide ?</a>
+                </div>
+            </form>
+
+            <div class="qr-section">
+                <h3 class="qr-title">Connexion avec code QR</h3>
+                <div class="qr-code" id="qrCode">
+                    <img src="KU_SAKANA_Qr_code-512.jpeg" alt="Code QR" width="200" height="200">
+                </div>
+                <p class="qr-note">
+                    Scannez ce code avec l'application KU SAKANA sur votre mobile pour vous connecter instantanément.
+                </p>
+            </div>
+
+            <div class="divider">
+                <span>OU</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-button">
+                    <i class="fab fa-google"></i>
+                    Continuer avec Google
+                </button>
+                <button class="social-button">
+                    <i class="fab fa-facebook-f"></i>
+                    Continuer avec Facebook
+                </button>
+                <button class="social-button">
+                    <i class="fab fa-apple"></i>
+                    Continuer avec Apple
+                </button>
+            </div>
+
+            <div class="other-options">
+                <p class="signup-now">
+                    Nouveau sur KU SAKANA ?
+                    <a href="acceuil.html" class="signup-link">Inscrivez-vous maintenant</a>.
+                </p>
+                
+                <p class="recaptcha-notice">
+                    Cette page est fournie par les élèves de GIIA d'ECAM.
+                    <a href="#">En savoir plus</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+   <footer>
+        <div class="footer-sections">
+            <div class="section">
+                <h4>A propos</h4>
+                <ul>
+                    <li><a href="">Contact: 066273591</a></li>
+                    <li><a href="">Logo de KU SAKANA</a></li>
+                    <li><a href="">Conditions d'utilisation</a></li>
+                    <li><a href="">Signaler contenu illicite</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Aides</h4>
+                <ul>
+                    <li><a href="">Centre d'aide KU SAKANA</a></li>
+                    <li><a href="">Questions fréquentes</a></li>
+                    <li><a href="">Boite à outils</a></li>
+                    <li><a href="">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Compétences</h4>
+                <ul>
+                    <li><a href="">Langage HTML</a></li>
+                    <li><a href="">Langage CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">Python</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h4>Divers</h4>
+                <ul>
+                    <li><a href="">Comment vendre son jeu ?</a></li>
+                    <li><a href="">Comment jouer en ligne ?</a></li>
+                    <li><a href="">Comment télécharger un jeu ?</a></li>
+                    <li><a href="">Plateforme adaptée aux débutants</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-botton">
+            <p>© 2025 Le site KUSAKANA disponible sur toutes les plateformes. Tous droits réservés.</p>
+            <ul>
+                <li><a href="/mentions-legales">Mentions légales</a></li>
+                <li><a href="/contact">Contact: 066273591</a></li>
+                <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
+            </ul>
+            <div class="Social-icons">
+                <a href="https://facebook.com/Grace Ivinza"><i class="fab fa-facebook"></i></a>
+                <a href="https://youtube.com/@Divinemini"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/divine.taty"><i class="fab fa-instagram"></i></a>
+                <a href="https://google.com/divinetaty15@gmail.com"><i class="fab fa-google-plus"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

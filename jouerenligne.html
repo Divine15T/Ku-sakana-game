@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouer en ligne - KU SAKANA</title>
+    <link rel="stylesheet" href="../Plateforme de jeu/Css/jouerenligne.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    </header>
+    <section class="games-hero">
+        <div class="hero-content">
+            <h2><i class="fas fa-gamepad"></i> KU SAKANA Jouer en ligne</h2>
+            <p>Plongez dans l'action ! Jouez instantanément à nos meilleurs jeux directement depuis votre navigateur. Pas de téléchargement, pas d'attente.</p>
+            <div class="stats">
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span>1,250+ joueurs en ligne</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-bolt"></i>
+                    <span>Chargement instantané</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+                  <section class="search-filter">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Rechercher un jeu..." id="searchInput">
+            <button onclick="filterGames()"><i class="#"></i> Rechercher</button>
+        </div>
+    </section>
+               <a href="New2.html">
+  <button type="button">
+    Retour à l'accueil
+  </button>
+</a>
+    <section class="games-grid">
+        <div class="game-card" data-category="action">
+            <div class="game-thumbnail">
+                <img src="https://play-lh.googleusercontent.com/dd6LyxqlPU0S0-5cXpuwhx8gVp-IR3Ub6e2jOi-fKPcbnbtRI7lfdWWFt-nnLaVcilE=w526-h296-rw" alt="Hero Adventure">
+                <div class="game-badge">Action</div>
+                <div class="play-overlay">
+                    <button class="play-btn" onclick="playGame('action1')">
+                        <i class="fas fa-play"></i> Jouer
+                    </button>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Hero Adventure</h3>
+                <p>Combattez des monstres dans un monde fantastique</p>
+                <div class="game-meta">
+                    <span><i class="fas fa-user"></i> 850 joueurs</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card" data-category="strategy">
+            <div class="game-thumbnail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTOhC14f2fH-MbSk_jcaA-ENr3Z2gqAtXDQ&s" alt="Cyber Chess">
+                <div class="game-badge">Stratégie</div>
+                <div class="play-overlay">
+                    <button class="play-btn" onclick="playGame('strategy1')">
+                        <i class="fas fa-play"></i> Jouer
+                    </button>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Cyber Chess</h3>
+                <p>Échecs futuristes avec pouvoirs spéciaux</p>
+                <div class="game-meta">
+                    <span><i class="fas fa-user"></i> 450 joueurs</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card" data-category="sport">
+            <div class="game-thumbnail">
+                <img src="https://cdn-www.bluestacks.com/bs-images/Featured_com.ninemgames.football.jpg" alt="Extreme Soccer">
+                <div class="game-badge">Sport</div>
+                <div class="play-overlay">
+                    <button class="play-btn" onclick="playGame('sport1')">
+                        <i class="fas fa-play"></i> Jouer
+                    </button>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Extreme Soccer</h3>
+                <p>Football avec boosters et power-ups</p>
+                <div class="game-meta">
+                    <span><i class="fas fa-user"></i> 1,200 joueurs</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card" data-category="arcade">
+            <div class="game-thumbnail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ42si-t51HlOi89Ph3jVtj4CkIJ_DHr4oIbA&s" alt="Space Race">
+                <div class="game-badge">Arcade</div>
+                <div class="play-overlay">
+                    <button class="play-btn" onclick="playGame('arcade1')">
+                        <i class="fas fa-play"></i> Jouer
+                    </button>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Space Race</h3>
+                <p>Course spatiale contre la montre</p>
+                <div class="game-meta">
+                    <span><i class="fas fa-user"></i> 680 joueurs</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card" data-category="action">
+            <div class="game-thumbnail">
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2268560/header.jpg?t=1743538759" alt="Zombie Survival">
+                <div class="game-badge">Action</div>
+                <div class="play-overlay">
+                    <button class="play-btn" onclick="playGame('action2')">
+                        <i class="fas fa-play"></i> Jouer
+                    </button>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Zombie Survival</h3>
+                <p>Survivez à la horde de zombies</p>
+                <div class="game-meta">
+                    <span><i class="fas fa-user"></i> 920 joueurs</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card" data-category="strategy">
+            <div class="game-thumbnail">
+                <img src="https://static.jouerjouer.com/9/115719/101671/1200x630/kingdom-defense-online.webp" alt="Kingdom Defense">
+                <div class="game-badge">Stratégie</div>
+                <div class="play-overlay">
+                    <button class="play-btn" onclick="playGame('strategy2')">
+                        <i class="fas fa-play"></i> Jouer
+                    </button>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Kingdom Defense</h3>
+                <p>Défendez votre royaume contre les invasions</p>
+                <div class="game-meta">
+                    <span><i class="fas fa-user"></i> 750 joueurs</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="game-player" id="gamePlayer">
+        <div class="player-header">
+            <h3 id="gameTitle">Jeu en cours</h3>
+            <button class="close-btn" onclick="closeGame()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="player-container">
+            <div class="game-frame" id="gameFrame">
+                <div class="coming-soon">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Zone de jeu</h3>
+                    <p>Le jeu se chargera ici automatiquement</p>
+                    <p>Pour un projet réel, tu pourras intégrer :</p>
+                    <ul>
+                        <li>Jeux HTML5 (Phaser.js, Construct 3)</li>
+                        <li>Iframes de jeux externes</li>
+                        <li>Jeux Unity WebGL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="player-sidebar">
+                <h4><i class="fas fa-users"></i> Joueurs en ligne</h4>
+                <div class="online-players">
+                    <div class="player">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Player123</span>
+                    </div>
+                    <div class="player">
+                        <i class="fas fa-user-circle"></i>
+                        <span>GameMaster</span>
+                    </div>
+                    <div class="player">
+                        <i class="fas fa-user-circle"></i>
+                        <span>ProGamer</span>
+                    </div>
+                </div>
+                <h4><i class="fas fa-comments"></i> Chat</h4>
+                <div class="chat-box">
+                    <div class="message">Bienvenue dans le jeu !</div>
+                    <div class="message">Qui veut faire équipe ?</div>
+                </div>
+                <input type="text" placeholder="Écrire un message..." class="chat-input">
+            </div>
+        </div>
+    </section>
+
+    <section class="multiplayer-section">
+        <h2><i class="fas fa-user-friends"></i> Mode Multijoueur</h2>
+        <div class="multiplayer-games">
+            <div class="mp-game">
+                <i class="fas fa-chess"></i>
+                <h3>Tournois</h3>
+                <p>Participez à des compétitions</p>
+                <button class="mp-btn">Voir tournois</button>
+            </div>
+            <div class="mp-game">
+                <i class="fas fa-trophy"></i>
+                <h3>Classement</h3>
+                <p>Montez dans le classement global</p>
+                <button class="mp-btn">Voir classement</button>
+            </div>
+            <div class="mp-game">
+                <i class="fas fa-headset"></i>
+                <h3>Voice Chat</h3>
+                <p>Discutez avec vos coéquipiers</p>
+                <button class="mp-btn">Activer audio</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../Plateforme de jeu/Java/script-jouer.js"></script>
+</body>
+</html>

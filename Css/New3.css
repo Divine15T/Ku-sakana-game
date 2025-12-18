@@ -1,0 +1,281 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, black 0%, #1a1a6e 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            overflow: auto;
+        }
+        .container {
+            max-width: 1000px;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            border: 2px solid black;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .icon {
+            font-size: 80px;
+            color: blue;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+    
+        h1 {
+            font-size: 3rem;
+            color: blue;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .message {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 200px;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: blue;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: black;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3);
+        }
+        
+        .countdown {
+            margin-top: 40px;
+            padding: 20px;
+            background: darkgray;
+            border-radius: 15px;
+            border-left: 4px solid white;
+        }
+
+        .countdown h3 {
+            color: blue;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        #timer {
+            font-size: 2.5rem;
+            font-family: monospace;
+            color: white;
+            letter-spacing: 3px;
+        }
+
+        .status {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .message {
+                font-size: 1.2rem;
+            }
+            
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .icon {
+                font-size: 60px;
+            }
+            
+            #timer {
+                font-size: 2rem;
+            }
+        }
+        footer {
+    background: linear-gradient(135deg, black 0%, #111 100%);
+    padding: 50px 0 20px;
+    border-top: 3px solid blue;
+    margin-top: 50px;
+}
+
+.footer-sections {
+    max-width: 5000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.section h4 {
+    color: blue;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid blue;
+    padding-bottom: 10px;
+}
+
+.section ul {
+    list-style: none;
+    font-size: 18px;
+}
+
+.section li {
+    margin-bottom: 15px;
+}
+
+.section a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.section a:hover {
+    color: blue;
+    transform: translateX(10px);
+    padding-left: 10px;
+}
+        .footer-botton {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.footer-botton p {
+    color: #999;
+    margin-bottom: 15px;
+    flex: 1;
+    min-width: 300px;
+    font-size: 16px;
+}
+
+.footer-botton ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-botton a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-botton a:hover {
+    color: blue;
+}
+
+.Social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.Social-icons a {
+    color: #ccc;
+    font-size: 28px;
+    transition: all 0.3s ease;
+    padding: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.Social-icons a:hover {
+    color: blue;
+    background: rgba(0, 0, 255, 0.2);
+    transform: translateY(-5px);
+}

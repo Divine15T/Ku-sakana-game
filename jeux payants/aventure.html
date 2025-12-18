@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux d'Aventure</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<h1 class="page-title">Catégorie : Aventure</h1>
+<a href="index.html"class="see-more-link">
+                    Retour à la catégorie <i class="fas fa-arrow-right"></i>
+                </a>
+
+<div class="games-container">
+
+    <div class="game-card">
+        <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2620/eIO6Ka26JChNo8KaFi7wON4L.jpg">
+        <h3 class="game-title">Uncharted 4</h3>
+        <p class="game-price">13 000 fcfa</p>
+    </div>
+
+    <div class="game-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/250px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg">
+        <h3 class="game-title">Zelda BOTW</h3>
+        <p class="game-price">26 000 fcfa</p>
+    </div>
+
+    <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5yJzfkgOEHHMuhN6yYkJNYvuM0Fyaqn74ag&s">
+        <h3 class="game-title">Tomb Raider</h3>
+        <p class="game-price">11 700 fcfa</p>
+    </div>
+
+    <div class="game-card">
+        <img src="https://cdn1.epicgames.com/3328b08ac1c14540aa265a1a85c07839/offer/hzd_wide-2560x1440-bd312be05c49cf339097777c493cb899.jpg">
+        <h3 class="game-title">Horizon Zero Dawn</h3>
+        <p class="game-price">16 250 fcfa</p>
+    </div>
+
+    <div class="game-card">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg?t=1750955096">
+        <h3 class="game-title">Spider-Man</h3>
+        <p class="game-price">19 500 fcfa</p>
+    </div>
+
+    <div class="game-card">
+        <img src="https://cdn1.epicgames.com/e509c16d53714b13ba8e393966507255/offer/jedi-fallen-orderWide-1920x1080-28eae371dbae080e2fc0df646fa42917.jpg">
+        <h3 class="game-title">Star Wars Jedi</h3>
+        <p class="game-price">18 200 fcfa</p>
+    </div>
+
+    <div class="game-card">
+        <img src="https://store-images.s-microsoft.com/image/apps.51903.71972716530068101.ccdcadf1-1d2a-49f2-9c37-0b0a27e5a53c.08e06d2d-1104-4c80-b879-91facf8348d5">
+        <h3 class="game-title">Assassin’s Creed Odyssey</h3>
+        <p class="game-price">17 750 fcfa</p>
+    </div>
+
+    <div class="game-card">
+        <img src="https://cdn1.epicgames.com/offer/3ddd6a590da64e3686042d108968a6b2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7">
+        <h3 class="game-title">God of War</h3>
+        <p class="game-price">22 750 fcfa</p>
+    </div>
+
+    <div class="game-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/16/Days_Gone_cover_art.jpg">
+        <h3 class="game-title">Days Gone</h3>
+        <p class="game-price">14 300 fcfa</p>
+    </div>
+
+    <div class="game-card">
+        <img src="https://cdn1.epicgames.com/columbine/offer/DETROIT_1-2560x1440-4fd6608a56880dc5d8e9d968517113c3.jpg">
+        <h3 class="game-title">Detroit Become Human</h3>
+        <p class="game-price">12 350 fcfa</p>
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div id="gameModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+
+        <div class="modal-body">
+            <img id="modalImage">
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <p id="modalPrice"></p>
+
+                <button class="buy-btn">Acheter maintenant</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: url('https://media.gqmagazine.fr/photos/646b7d71a35e700534ed9802/16:9/w_2560%2Cc_limit/100-best-games-hp-b.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #0a192f;
+      min-height: 100vh;
+    }
+    .overlay {
+      
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+    .bouton-lien {
+  background-color: #1a0f5a; 
+  color: white;              
+  padding: 20px 20px;        
+  text-align: center;        
+  text-decoration: none;     
+  display: inline-block;     
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;           
+  border-radius: 8px;        
+}
+
+.bouton-lien:hover {
+  background-color: #131063;
+}
+    .categories-container {
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 50px 20px 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    .category-card {
+      background: #243b55;
+      border-radius: 20px;
+      
+      color: #fff;
+      width: 320px;
+      min-height: 520px;
+      padding: 25px 20px 36px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .category-img {
+      width: 90px; height: 90px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 13px;
+      border: 3px solid #6ebaff;
+      background: #fff;
+      
+    }
+    .category-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      color: #6ebaff;
+      text-shadow: 0 1px 2px #0007;
+    }
+    .choose-btn {
+      background: linear-gradient(90deg, #1976d2 0%, #39b6ff 100%);
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 12px;
+      padding: 12px 32px;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 8px #1976d240;
+      cursor: pointer;
+      margin-top: auto;
+      margin-bottom: 0;
+      transition: background 0.22s;
+    }
+    .choose-btn:hover {
+      background: linear-gradient(90deg, #125ab3 0%, #1976d2 100%);
+    }
+
+    .championships-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      padding-top: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .champ-card {
+      background: #1e2b3d;
+      border-radius: 14px;
+      width: 325px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 20px #16294475;
+      padding: 21px 18px 18px 18px;
+      color: #fff;
+      position: relative;
+      margin-bottom: 25px;
+    }
+    .champ-img {
+      width: 100%;
+      max-width: 250px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      border: 2px solid #0bc5ea;
+      background: #fff;
+    }
+    .champ-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 7px;
+      color: #39b6ff;
+      text-align: center;
+      text-shadow: 0 2px 8px #000c;
+    }
+    .champ-desc {
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+      color: #e3e9f0;
+      padding: 0 2px 0 2px;
+      min-height: 49px;
+      text-align: center;
+    }
+    .participate-btn {
+      background: linear-gradient(90deg, #0a1d38 0%, #008be1 100%);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 22px;
+      margin-top: 10px;
+      font-size: 1rem;
+      box-shadow: 0 1px 6px #39b6ff60;
+      cursor: pointer;
+      transition: background 0.21s;
+    }
+    .participate-btn:hover {
+      background: linear-gradient(90deg, #008be1 0%, #1976d2 100%);
+    }
+    /* Modal/rules styles */
+    .modal-bg {
+      position: fixed;
+      z-index: 1500;
+      left: 0; top: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(24,41,63,0.92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.18s;
+    }
+    .modal-content {
+      background: #f9fcff;
+      border-radius: 16px;
+      padding: 36px 34px 25px 34px;
+      box-shadow: 0 10px 40px #2179be40;
+      min-width: 340px;
+      max-width: 410px;
+      color: #18345e;
+      position: relative;
+      animation: fadePop 0.2s;
+      font-size: 1.1em;
+      /* Ajout du scroll en cas de débordement de contenu */
+      max-height: 74vh;
+      overflow-y: auto;
+    }
+    @keyframes fadePop {
+      from { transform: scale(0.9); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
+    }
+    .modal-close-btn {
+      position: absolute;
+      right: 19px;
+      top: 11px;
+      font-size: 1.5em;
+      color: #1976d2;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 0.16s;
+    }
+    .modal-close-btn:hover { color: #e91e63; }
+    .modal-content h3 {
+      color: #1976d2;
+      font-size: 1.22rem;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 17px;
+      letter-spacing: 0.7px;
+    }
+    .modal-content ul {
+      margin: 0 0 13px 0;
+      padding-left: 20px;
+    }
+    .modal-participate-form input[type="text"] {
+      width: 96%;
+      padding: 7px 9px;
+      border: 1.5px solid #1976d2;
+      border-radius: 7px;
+      font-size: 1rem;
+      margin-bottom: 7px;
+      margin-top: 4px;
+    }
+    .modal-participate-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 0.98em;
+    }
+    .modal-participate-form button {
+      background: linear-gradient(90deg, #39b6ff 0%, #1976d2 100%);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 19px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 8px;
+      box-shadow: 0 1px 5px #1976d250;
+      transition: background 0.19s;
+    }
+    .modal-participate-form button:hover {
+      background: linear-gradient(90deg, #1976d2 0%, #39b6ff 100%);
+    }
+    .infos-banner {
+      margin-top: 18px;
+      padding: 10px 16px;
+      background: #e9f5ff;
+      border-left: 4px solid #1976d2;
+      border-radius: 9px;
+      color: #184d77;
+      font-size: 0.98rem;
+      min-height: 38px;
+      margin-bottom: 13px;
+    }
+    .leaderboard-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px 19px 12px 19px;
+      margin-top: 18px;
+      box-shadow: 0 2px 8px #2179be27;
+      color: #0864aa;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .leaderboard-box h4 { color: #2179be; margin-top: 0; }
+    .leaderboard-list {
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+      font-size: 1.04em;
+      counter-reset: place;
+    }
+    .leaderboard-list li {
+      margin-bottom: 7px;
+      padding: 4px 0;
+      border-bottom: 1px solid #e2eefe;
+      font-weight: 500;
+    }
+    .leaderboard-list li:first-child,
+    .leaderboard-list li:nth-child(2),
+    .leaderboard-list li:nth-child(3) {
+      color: #1976d2;
+      font-weight: bold;
+    }
+    .participant-list {
+      margin-top: 10px;
+      font-size: 0.99em;
+    }
+    .category-sep {
+      width: 100%;
+      border-top: 2px solid #125ab3;
+      margin: 25px 0 0 0;
+      opacity: 0.12;
+    }
+
+    /* Amélioration du style de la scrollbar du modal pour une meilleure intégration visuelle */
+    .modal-content::-webkit-scrollbar {
+      width: 11px;
+      background: #e2e9f7;
+      border-radius: 8px;
+    }
+    .modal-content::-webkit-scrollbar-thumb {
+      background: #b3d2f5;
+      border-radius: 8px;
+    }
+    .modal-content::-webkit-scrollbar-thumb:hover {
+      background: #82bbea;
+    }
+    /* Firefox scrollbar style */
+    .modal-content {
+      scrollbar-width: thin;
+      scrollbar-color: #b3d2f5 #e2e9f7;
+    }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Championnats de Jeux Vidéo</title>
+  <link rel="stylesheet" href="../Plateforme de jeu/Css/chanpionnat.css">
+</head>
+<body>
+<div class="overlay">
+  <h1 class="main-title">Championnats de Jeux Vidéo</h1>
+  <a href="New2.html">
+<button type="button"> Retour à l'accueil </button>
+</a>
+  <div class="categories-container" id="categories-list"></div>
+  <div id="championships-area" style="display:none;">
+    <div class="center">
+      <button class="choose-btn" onclick="hideChampionships()">Retour aux catégories</button>
+    </div>
+    <div class="championships-list" id="championships-list">
+    </div>
+  </div>
+</div>
+<div id="modal-bg" class="modal-bg" style="display:none;">
+  <div class="modal-content" id="modal-content"></div>
+</div>
+<script src="../Plateforme de jeu/Java/championnat.js"></script>
+</body>
+</html>
